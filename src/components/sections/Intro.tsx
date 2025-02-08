@@ -6,6 +6,7 @@ interface IntroProps {
   config: IntroConfig;
 }
 const Intro = ({ config }: IntroProps) => {
+
   return (
     
       <div className="section-intro__wrapper">
@@ -14,14 +15,14 @@ const Intro = ({ config }: IntroProps) => {
           <p className="section-intro__description">{config.description}</p>
           <div className="section-intro__buttons">
             <Button style={{width: "150px"}} >
-              <Link className="" href={config.primaryButtonLink}>
+             {config.primaryButtonLink&& <Link className="" href={config.primaryButtonLink}>
                 {config.primaryButtonTitle}
-              </Link>
+              </Link>}
             </Button>
             <Button style={{width: "150px"}} variant="secondary">
-              <Link className="" href={config.secondaryButtonLink}>
+              {config.secondaryButtonLink&& <Link className="" href={config.secondaryButtonLink}>
                 {config.secondaryButtonTitle}
-              </Link>
+              </Link>}
             </Button>
           </div>
         </div>

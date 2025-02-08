@@ -40,7 +40,7 @@ export const INTRO_FIRST_SECTION: IntroConfig = {
     description: [],
     image: "https://firebasestorage.googleapis.com/v0/b/svitlospace-b21f8.appspot.com/o/Ellipse-147.png?alt=media&token=a054de8c-fd86-4f62-9fe1-143aefb7451e",
     primaryButtonTitle: "CONTACT ME",
-    primaryButtonLink: "/contact",
+    primaryButtonLink: "contact",
     secondaryButtonTitle: "OPEN CV",
     secondaryButtonLink: "https://firebasestorage.googleapis.com/v0/b/svitlospace-b21f8.appspot.com/o/portfolio%2FCV%20George%20Madzharov%20(1).pdf?alt=media&token=83899362-6f04-4a67-8244-340cad700776",
 }
