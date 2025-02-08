@@ -1,5 +1,5 @@
-import { HeaderNav,HeaderConfig, IntroConfig } from "./types";
-export const HEADER_NAV: HeaderNav[] = [
+import { HeaderNavigation, HeaderConfig, IntroConfig } from "./types";
+export const HEADER_NAV: HeaderNavigation[] = [
     {
         id:0,
         link: "/home",
