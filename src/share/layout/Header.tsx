@@ -1,12 +1,11 @@
 // components/Header.js
 import React from "react";
-import HeaderNav from "./HeaderNav";
 import { HeaderConfig } from "../common/types";
 interface Props {
         logo: React.ReactNode;
         config: HeaderConfig;
     }
-export default function Header({logo, config}: Props) {
+export default function Header({logo,}: Props) {
     return (
       <header className="container header-wrapper">
        {logo}

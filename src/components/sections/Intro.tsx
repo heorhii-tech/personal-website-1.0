@@ -1,8 +1,6 @@
 import React from "react";
-import { INTRO_FIRST_SECTION } from "../../share/common/common";
 import { IntroConfig } from "../../share/common/types";
 import { Button } from "@/components/ui/button";
-
 import Link from "next/link";
 interface IntroProps {
   config: IntroConfig;
