@@ -1,7 +1,13 @@
+@import "../layout/layout.css";
+@import "../logo/logo.css";
+@import "../../components/sections/sections.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+.container{
+    @apply px-4 md:px-5;
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -17,5 +23,5 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply font-mono;
 }

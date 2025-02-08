@@ -1,0 +1,23 @@
+.section-intro{
+    @apply py-[60px];
+}
+.section-intro__wrapper{
+    @apply flex flex-col justify-between items-center;
+    @apply xl:flex-row ;
+    
+}
+.section-intro__content{
+    @apply flex flex-col mt-[60px] order-2  justify-between min-h-full gap-[60px];
+    @apply xl:order-1 
+}
+.section-intro__media{
+    @apply flex flex-col order-1  justify-between min-h-full gap-[60px];
+    @apply xl:order-2 
+}
+
+.section-intro__title{
+    @apply xl:text-5xl xl:max-w-[620px] font-bold text-text-main;
+}
+.section-intro__buttons{
+    @apply flex  gap-4;
+}

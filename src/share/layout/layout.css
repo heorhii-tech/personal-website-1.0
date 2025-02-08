@@ -1,0 +1,17 @@
+.section-header{
+    @apply border-b border-[#27272a]   
+}
+.header-wrapper{
+    @apply flex  justify-between items-center h-[80px] bg-transparent  w-full;
+    @apply xl:px-5;
+}
+.header-nav__list{
+    @apply flex list-none;
+}
+.header-nav__item{
+    @apply mr-4;
+}
+.header-nav__link{
+    @apply text-text-main transition-colors duration-300 antialiased tracking-wide ; 
+    @apply hover:text-white;
+}
