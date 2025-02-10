@@ -40,7 +40,7 @@ const BurgerMenu = ({
           {/* Trigger close on link click */}
           <div className="flex flex-col gap-4">
             {navigation.map((item) => (
-              <Link style={{ backgroundColor: "black", width: "100%",padding: "10px",textAlign: "center" }}  href={item.link} type="button" key={item.id} variant="outline" onClick={handleClose}>
+              <Link style={{ backgroundColor: "black", width: "100%",padding: "10px",textAlign: "center" }}  href={item.link} type="button" key={item.id}  onClick={handleClose}>
                 {item.text}
               </Link>
             ))}
