@@ -7,7 +7,7 @@ import {
 export const HEADER_NAV: HeaderNavigation[] = [
   {
     id: 0,
-    link: "/home",
+    link: "/",
     text: "HOME",
   },
   {
