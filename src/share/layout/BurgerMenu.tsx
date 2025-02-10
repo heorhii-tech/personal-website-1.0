@@ -41,9 +41,9 @@ const BurgerMenu = ({
           {/* Trigger close on link click */}
           <div className="flex flex-col gap-4">
             {navigation.map((item) => (
-              <Button style={{ backgroundColor: "black", width: "100%" }} type="button" key={item.id} variant="outline" onClick={handleClose}>
-                <Link href={item.link}>{item.text}</Link>
-              </Button>
+              <Link style={{ backgroundColor: "black", width: "100%",padding: "10px",textAlign: "center" }}  href={item.link} type="button" key={item.id} variant="outline" onClick={handleClose}>
+                {item.text}
+              </Link>
             ))}
           </div>
         </DrawerFooter>
