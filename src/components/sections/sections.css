@@ -2,13 +2,13 @@
     @apply py-[60px];
 }
 .section-intro__wrapper{
-    @apply flex flex-col justify-between gap-[20px] items-center min-h-[calc(100vh-220px)];
+    @apply flex flex-col justify-between gap-[20px] items-center min-h-[calc(100vh-260px)];
     @apply xl:flex-row mt-[20px];
     
 }
 .section-intro__content{
     @apply flex flex-col items-center order-2  justify-between min-h-full;
-    @apply xl:order-1 gap-[100px]
+    @apply xl:order-1 gap-[60px]
 }
 .section-intro__media{
     @apply flex flex-col order-1  justify-between min-h-full gap-[60px];
