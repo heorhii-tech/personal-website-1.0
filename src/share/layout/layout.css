@@ -2,7 +2,7 @@
     @apply border-b border-[#27272a]   
 }
 .header-wrapper{
-    @apply flex  justify-between items-center h-[80px] bg-transparent  w-full;
+    @apply flex  justify-between items-center h-[80px] bg-transparent mx-auto w-full;
     @apply xl:px-5;
 }
 .header-nav__list{
@@ -14,4 +14,7 @@
 .header-nav__link{
     @apply text-text-main transition-colors duration-300 antialiased tracking-wide ; 
     @apply hover:text-white;
+}
+.burger-nav__wrapper{
+    @apply flex flex-col gap-4 mx-auto;
 }

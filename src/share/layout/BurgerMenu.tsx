@@ -38,7 +38,7 @@ const BurgerMenu = ({
         </DrawerHeader>
         <DrawerFooter>
           {/* Trigger close on link click */}
-          <div className="flex flex-col gap-4">
+          <div className="burger-nav__wrapper container">
             {navigation.map((item) => (
               <Link style={{ backgroundColor: "black", width: "100%",padding: "10px",textAlign: "center" }}  href={item.link} type="button" key={item.id}  onClick={handleClose}>
                 {item.text}

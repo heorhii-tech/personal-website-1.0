@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 .container{
-    @apply px-4 md:px-5;
+    @apply px-4 md:px-5 2xl:max-w-[1440px];
 }
 :root {
   --background: #ffffff;
@@ -15,7 +15,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #000000;
     --foreground: #ededed;
   }
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { AboutMeConfig } from "../../share/common/types";
+import { Separator } from "@/components/ui/separator"
 
 interface AboutMeProps {
   config: AboutMeConfig;
@@ -17,6 +18,8 @@ const AboutMe: React.FC<AboutMeProps> = ({ config }) => {
      {config.description.map((paragraph, index) => (
           <p key={index} className="about-me__description">
             {paragraph}
+            
+
           </p>
         ))}
      </div>
