@@ -3,7 +3,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Logo from "../logo/Logo";
 import { HEADER_CONFIG } from "../common/common";
-import useLayout from "./useLayout";
+
 
 interface Props {
     children: React.ReactNode;

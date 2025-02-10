@@ -11,7 +11,7 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 
-import { X, Menu } from "lucide-react";
+import {  Menu } from "lucide-react";
 import { HeaderConfig } from "../common/types";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
