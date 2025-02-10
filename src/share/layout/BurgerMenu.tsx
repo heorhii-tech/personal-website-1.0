@@ -31,7 +31,7 @@ const BurgerMenu = ({
   return (
     <Drawer open={isOpen} onOpenChange={setIsOpen}>
       <DrawerTrigger onClick={() => setIsOpen(true)}>
-        <Menu className="h-6 w-6 text-white dark:text-zinc-200" />
+        <Menu style={{width: "38px", height: "38px"}} className=" text-white dark:text-zinc-200" />
       </DrawerTrigger>
       <DrawerContent>
         <DrawerHeader>
