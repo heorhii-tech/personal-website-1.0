@@ -1,9 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export", // Включает next export
+  output: "export", 
   images: {
-    unoptimized: true, // Отключает image optimization (Render не поддерживает)
+    unoptimized: true, 
   },
 };
 
