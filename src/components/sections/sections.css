@@ -2,13 +2,13 @@
     @apply py-[60px];
 }
 .section-intro__wrapper{
-    @apply flex flex-col justify-between items-center h-[100dvh];
-    @apply xl:flex-row ;
+    @apply flex flex-col justify-between items-center min-h-[calc(95vh-140px)];
+    @apply xl:flex-row mt-[60px];
     
 }
 .section-intro__content{
-    @apply flex flex-col mt-[60px] order-2  justify-between min-h-full gap-[60px];
-    @apply xl:order-1 
+    @apply flex flex-col order-2  justify-between min-h-full;
+    @apply xl:order-1 gap-[100px]
 }
 .section-intro__media{
     @apply flex flex-col order-1  justify-between min-h-full gap-[60px];
