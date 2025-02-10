@@ -2,20 +2,23 @@
     @apply py-[60px];
 }
 .section-intro__wrapper{
-    @apply flex flex-col justify-between items-center min-h-[calc(100vh-220px)];
+    @apply flex flex-col justify-between gap-[20px] items-center min-h-[calc(100vh-220px)];
     @apply xl:flex-row mt-[60px];
     
 }
 .section-intro__content{
-    @apply flex flex-col order-2  justify-between min-h-full;
+    @apply flex flex-col items-center order-2  justify-between min-h-full;
     @apply xl:order-1 gap-[100px]
 }
 .section-intro__media{
     @apply flex flex-col order-1  justify-between min-h-full gap-[60px];
     @apply xl:order-2 
 }
-
+.section-intro__image{
+    @apply max-w-[350px];
+}
 .section-intro__title{
+    @apply text-[24px] text-center;
     @apply xl:text-5xl xl:max-w-[620px] font-bold text-text-main;
 }
 .section-intro__buttons{
