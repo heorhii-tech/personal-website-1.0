@@ -1,9 +1,7 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  output: "export", 
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   images: {
-    unoptimized: true, 
+    domains: ["firebasestorage.googleapis.com"], // Разрешить изображения с Firebase
   },
 };
 
