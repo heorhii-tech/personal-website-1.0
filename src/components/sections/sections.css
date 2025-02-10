@@ -3,7 +3,7 @@
 }
 .section-intro__wrapper{
     @apply flex flex-col justify-between gap-[20px] items-center min-h-[calc(100vh-220px)];
-    @apply xl:flex-row mt-[60px];
+    @apply xl:flex-row mt-[20px];
     
 }
 .section-intro__content{
