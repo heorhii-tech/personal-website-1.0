@@ -17,3 +17,11 @@ primaryButtonLink?: string,
 secondaryButtonTitle?: string,
 secondaryButtonLink?: string
 }
+
+export interface AboutMeConfig {
+    image: string,
+    title: string,
+    description: string[],
+   
+    
+}

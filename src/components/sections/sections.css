@@ -24,3 +24,16 @@
 .section-intro__buttons{
     @apply flex  gap-4;
 }
+
+.about-me{
+    @apply py-[60px] flex flex-col gap-[30px];
+}
+.about-me__content{
+    @apply flex flex-col gap-[30px];
+}
+.about-me__title{
+    @apply bg-zinc-100 text-zinc-900 w-fit px-[16px] py-[8px];
+}
+.about-me__description-wrapper{
+    @apply flex flex-col gap-[16px];
+}
