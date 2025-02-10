@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { IntroConfig } from "../../share/common/types";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -30,7 +29,7 @@ const Intro = ({ config }: IntroProps) => {
         </div>
       </div>
       <div className="section-intro__media">
-        <Image
+        <img
           className="section-intro__image"
           src={config.image}
           alt=""
