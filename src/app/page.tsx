@@ -1,7 +1,7 @@
 import React from "react";
 import { INTRO_FIRST_SECTION, ABOUT_ME_CONFIG } from "@share/common/common";
-import Intro from "@/components/sections/Intro";
-import AboutMe from "@/components/sections/AboutMe";
+import Intro from "@/components/sections/homePage/Intro";
+import AboutMe from "@/components/sections/homePage/AboutMe";
 const Home = () => {
     return (
         <div className="home-page mx-auto">

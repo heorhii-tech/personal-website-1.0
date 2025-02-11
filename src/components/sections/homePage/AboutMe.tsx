@@ -1,6 +1,6 @@
 import React from "react";
-import { AboutMeConfig } from "../../share/common/types";
-import CodeComponent from "../extra/CodeComponent";
+import { AboutMeConfig } from "../../../share/common/types";
+import CodeComponent from "../../extra/CodeComponent";
 
 interface AboutMeProps {
   config: AboutMeConfig;

@@ -3,6 +3,8 @@ import {
   HeaderConfig,
   IntroConfig,
   AboutMeConfig,
+  ProjectConfig,
+  ProjectsConfig,
 } from "./types";
 export const HEADER_NAV: HeaderNavigation[] = [
   {
@@ -63,4 +65,85 @@ export const ABOUT_ME_CONFIG: AboutMeConfig = {
     "Styling plays a crucial role in crafting seamless user experiences. Transforming Figma designs into functional, responsive interfaces has taught me the importance of adaptability and efficiency. I leverage tools like Tailwind CSS and UI component libraries such as MUI, Ant Design, and Shadcn to accelerate development without compromising quality.",
     "I am constantly learning, exploring new technologies, and seeking exciting opportunities. My drive for innovation and continuous growth makes me a valuable asset to any development team, always ready to take on new challenges!",
   ],
+};
+const FULL_STACK_PROJECTS: ProjectConfig[] = [
+  {
+    project: "Light Space",
+    year: 2023,
+   
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/svitlospace-b21f8.appspot.com/o/portfolio%2F5465352030714455350%20(1).jpg?alt=media&token=92c30bbd-ab3a-4410-b27b-b6c3cffc6254",
+
+    subtitle:
+      "Web site for coworking studio. Logic of authorization, registration, booking, personal account.Payment logic via Stripe",
+    description: [
+      "Booking: Implementation of cross-booking restriction, preventing table bookings for the same time, and booking multiple tables at different times.",
+      "Payment: Online payment via card using the Stripe service, cash payment.",
+      "Personal Account: Ability to change phone number, avatar, and user name.",
+    ],
+    tech: "React,Webpack,Tailwind CSS,MUI,Stripe",
+    demoLink: "https://light-space.onrender.com/",
+    gitLink: "https://github.com/heorhii-tech/light_space",
+  },
+  {
+    project: "Admin panel for Light Space",
+    year: 2024,
+    warning: "IN PROGRESS",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/svitlospace-b21f8.appspot.com/o/portfolio%2Fadminpanel.png?alt=media&token=b01e6fc9-1e60-4fa8-8a34-54eeac18e048",
+    subtitle:
+      "Admin panel for Light Space. Ability to create, edit, and delete projects, users, and bookings.",
+    description: [
+      "Tables: add, edit and delete tables.",
+      "Reservations: deleting, adding reservations.",
+      "Users: managing user accounts"
+    ],
+    tech: "React,Redux,Webpack,Tailwind CSS,MUI,Stripe",
+    demoLink: "https://light-space.onrender.com/",
+    gitLink: "https://github.com/heorhii-tech/light_space",
+  },
+];
+const RESPONSIVE_PROJECTS: ProjectConfig[] = [
+  {
+    project: "Fashion Shop",
+    year: 2024,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/svitlospace-b21f8.appspot.com/o/portfolio%2FfashionShop.png?alt=media&token=51c40269-91ec-4422-b3bf-4d0481e7da8f",
+    subtitle:
+      "The site is built to demonstrate adaptive design skills.",
+    description: [
+      "The site is built using pure Tailwind CSS without any UI libraries..",
+      "Adaptation for devices: mobile, tablet, small laptop, large laptop, and higher..",
+      
+    ],
+    tech: "React,TypeScript,Webpack,Tailwind CSS,",
+    demoLink: "https://fashion-kh8l.onrender.com/",
+    gitLink: "https://github.com/heorhii-tech/fashion",
+  },
+  
+];
+
+const JAVA_SCRIPT_PROJECTS: ProjectConfig[] = [
+  {
+    project: "Chuck Norris jokes",
+    year: 2022,
+    image:
+      "https://api.chucknorris.io/img/chucknorris_logo_coloured_small@2x.png"
+    ,
+    subtitle:
+      "The site is built to demonstrate JavaScript and adaptive design skills.",
+    description: [
+      "The site is built using pure Tailwind CSS without any UI libraries..",
+      "Adaptation for devices: mobile, tablet, small laptop, large laptop, and higher..",
+      
+    ],
+    tech: "JavaScript,Webpack,Tailwind CSS,",
+    demoLink: "https://chuk-norris-jokes.onrender.com/",
+    gitLink: "https://github.com/heorhii-tech/Chuk_Norris_jokes",
+  },
+]
+export const PROJECTS_CONFIG: ProjectsConfig = {
+  fullStack: FULL_STACK_PROJECTS,
+  responsive: RESPONSIVE_PROJECTS,
+  javaScript: JAVA_SCRIPT_PROJECTS
 };

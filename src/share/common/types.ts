@@ -25,3 +25,20 @@ export interface AboutMeConfig {
    
     
 }
+export interface ProjectConfig {
+    image: string,
+    project: string,
+    subtitle: string,
+    warning?: string,
+    description: string[],
+    tech: string,
+    demoLink: string,
+    gitLink: string,
+    year?: number
+}
+export interface ProjectsConfig {
+    fullStack: ProjectConfig[],
+    
+    responsive: ProjectConfig[],
+    javaScript: ProjectConfig[]
+}

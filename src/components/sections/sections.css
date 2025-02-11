@@ -55,3 +55,18 @@
 .about-me__description {
     @apply border border-[#27272a] p-[16px] text-text-main bg-transparent text-lg leading-relaxed;
 }
+
+.projects{
+    @apply mt-[40px]
+}
+.projects__wrapper{
+    @apply mt-[40px] mx-auto flex flex-col gap-[30px];
+}
+.projects__type-wrapper{
+    @apply mt-[40px] mx-auto flex flex-col gap-[30px] items-center;
+    @apply md:flex-row md:flex-wrap md:justify-between md:gap-[40px] xl:justify-start;
+}
+
+.project-card{
+    @apply max-w-sm shadow-lg bg-transparent;
+}

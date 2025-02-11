@@ -1,2 +1,3 @@
-export * from "./Intro";
-export * from "./AboutMe";
+export * from "./homePage/Intro";
+export * from "./homePage/AboutMe";
+export * from "./projectsPage/Projects";

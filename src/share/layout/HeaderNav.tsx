@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { HeaderNavigation } from "../common/types";
 
 interface HeaderNavProps {
@@ -10,9 +11,9 @@ const HeaderNav: React.FC<HeaderNavProps> = ({ navigation }) => {
             <ul className="header-nav__list">
                 {navigation.map((item) => (
                     <li key={item.id} className="header-nav__item">
-                        <a className="header-nav__link" href={item.link}>
+                        <Link className="header-nav__link" href={item.link}>
                             {item.text}
-                        </a>
+                        </Link>
                     </li>
                 ))}
             </ul>

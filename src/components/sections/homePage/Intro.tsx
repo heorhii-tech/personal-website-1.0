@@ -1,8 +1,8 @@
 import React from "react";
-import { IntroConfig } from "../../share/common/types";
+import { IntroConfig } from "../../../share/common/types";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import MatrixEffect from "../animations/MatrixEffect";
+import MatrixEffect from "../../animations/MatrixEffect";
 interface IntroProps {
   config: IntroConfig;
 }

@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 const CodeComponent = () => {
   return (
-    <Card className="hidden lg:block mx-auto shadow-lg xl:max-h-[1125px] 2xl:max-h-[1041px] overflow-y-hidden bg-black text-white border-none">
+    <Card className="hidden lg:max-w-[34rem] lg:block mx-auto shadow-lg xl:max-h-[1125px] 2xl:max-h-[1041px] overflow-y-hidden bg-black text-white border-none">
     
         <pre className="bg-black overflow-x-auto ">
           <code className="text-green-400">
