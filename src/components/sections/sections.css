@@ -3,7 +3,7 @@
 }
 .section-intro__wrapper{
     @apply flex flex-col justify-between gap-[20px] items-center min-h-[calc(100vh-260px)];
-    @apply xl:flex-row mt-[20px] lg:flex-row lg:items-stretch xl:mt-[60px];
+    @apply xl:flex-row mt-[20px] lg:flex-row lg:items-stretch lg:mt-[120px];
     
 }
 .section-intro__content{
@@ -20,7 +20,7 @@
 }
 .section-intro__title{
     @apply text-[24px] text-center;
-    @apply lg:text-[40px] xl:text-[50px] xl:max-w-[650px]  font-bold text-text-main;
+    @apply md:text-[28px] lg:text-[40px] xl:text-[50px] xl:max-w-[650px]  font-bold text-text-main;
 }
 .section-intro__buttons{
     @apply flex  gap-4  justify-center  w-full z-[10];
@@ -29,12 +29,18 @@
 }
 
 .about-me{
-    @apply py-[60px] flex flex-col gap-[30px];
-    @apply lg:flex-row lg:mt-[100px];
+    @apply py-[60px]  gap-[30px];
+    @apply lg:flex-row lg:py-[60px];
+}
+.about-me__container{
+    @apply flex items-center justify-between mt-[20px] lg:mt-[40px] ;
+}
+.about-me__media{
+    @apply flex items-center;
 }
 .about-me__content{
     @apply flex flex-col gap-[30px];
-    @apply lg:max-w-[50%] lg:items-start lg:justify-between;
+    @apply lg:max-w-[42%] lg:justify-between;
 }
 .about-me__title{
     @apply bg-zinc-100 text-zinc-900 w-fit px-[16px] py-[8px];
@@ -46,6 +52,6 @@
 .about-me__description-wrapper{
     @apply flex flex-col gap-[16px];
 }
-.about-me__description{
-    @apply border border-[#27272a] p-[16px]
+.about-me__description {
+    @apply border border-[#27272a] p-[16px] text-text-main bg-transparent text-lg leading-relaxed;
 }

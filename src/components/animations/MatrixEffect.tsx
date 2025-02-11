@@ -22,7 +22,7 @@ useEffect(() => {
   return () => mediaQuery.removeEventListener("change", handleChange);
 }, []);
   const [columns, setColumns] = useState<Column[]>([]);
-  const columnCount = isLargeScreen ? 34 : 25; // Количество столбцов
+  const columnCount = isLargeScreen ? 40 : 25; // Количество столбцов
   const speed = 3; // Скорость падения
 
   useEffect(() => {
@@ -40,7 +40,7 @@ useEffect(() => {
   }, [columnCount]);
 
   return (
-    <div className="hidden lg:flex w-full bg-black overflow-hidden flex absolute top-0 left-0 z-[-1] mt-[25px] xl:mt-[100px]">
+    <div className="hidden lg:flex justify-center w-full bg-black overflow-hidden flex absolute top-0 left-0 z-[-1] mt-[25px] xl:mt-[100px]">
       {columns.map((column) => (
         <div key={column.id} className="flex flex-col mx-1">
           {column.characters.map((char, index) => (
