@@ -55,3 +55,12 @@ export interface ExperienceConfig {
         skills: string[]
     }[]
 }
+export interface ContactConfig {
+    title: string,
+    description: string,
+    cards_info: {
+        id: string,
+        title: string,
+        link?: string
+    }[]
+}

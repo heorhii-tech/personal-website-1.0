@@ -72,13 +72,35 @@
 }
 
 .experience-block__title{
-    @apply text-[24px] text-center bg-zinc-100 w-fit text-zinc-900 px-[16px] py-[8px] mt-[40px];
+    @apply text-[18px] text-center bg-zinc-100 w-fit text-zinc-900 px-[16px] py-[8px] mt-[40px];
 }
 .experience-block__description{
     @apply mt-[40px]
 }
 .experience-block__skills{
-    @apply text-[16px];
+    @apply text-[16px] tracking-wider leading-relaxed;
     list-style-type: square; /* Круглые точки */
     padding-left: 20px; /* Отступ слева */
+}
+
+.contact{
+    @apply mt-[60px] md:mt-[80px] lg:mt-[100px] xl:mt-[120px];
+}
+.contact__title{
+    @apply text-[18px] w-full text-center bg-zinc-100  text-zinc-900 px-[16px] py-[8px] mt-[40px];
+    @apply md:w-fit;
+}
+.contact__description{
+    @apply mt-[40px] text-[16px] text-text-main tracking-wider leading-relaxed;
+}
+.contact__cards{
+    @apply mt-[60px] grid grid-cols-1 gap-[20px] mx-auto  items-center;
+    @apply md:grid-cols-2 md:mt-[40px] lg:mt-[60px] xl:mt-[80px];
+}
+.contact-card{
+    @apply cursor-pointer hover:border-white transition-all duration-300 border border-[#27272a] p-[20px];
+}
+.contact-card__link{
+    @apply  text-[16px] w-full tracking-wider leading-relaxed text-text-main flex items-center justify-center gap-[10px];
+    @apply lg:hover:text-white lg:justify-start;
 }

@@ -6,8 +6,11 @@ import {
   ProjectConfig,
   ProjectsConfig,
   EducationConfig,
-  ExperienceConfig
+  ExperienceConfig,
+  ContactConfig
 } from "./types";
+
+
 export const HEADER_NAV: HeaderNavigation[] = [
   {
     id: 0,
@@ -227,3 +230,32 @@ export const EXPERIENCE_CONFIG: ExperienceConfig[] = [
     ]
   }
 ];
+
+export const CONTACT_CONFIG: ContactConfig = {
+  title: "CONTACT ME",
+  description: "I am always interested in new opportunities and collaborations. If you have any questions or would like to get in touch, please don't hesitate to reach out to me. I currently live in Rotterdam near the Alexandrium shopping center and am available through various communication channels.",
+  cards_info:[
+    {
+      id:"tel",
+      
+      title:"+31 6 38 69 95 61",
+    },{
+      id:"linkedin",
+     
+      title:"GEORGE MADZHAROV",
+      link:"https://www.linkedin.com/in/heorhii-madzharov/"
+    },
+    {
+      id:"email",
+      
+      title:"heorhiimadzharov@gmail.com",
+      link:"heorhiimadzharov@gmail.com"
+    },
+    {
+      id:"github",
+      
+      title:"GIT HUB",
+      link:"https://github.com/heorhii-tech"
+    }
+  ]
+}

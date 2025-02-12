@@ -20,7 +20,7 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
-    <Card className="">
+    <Card className="hover:border-white transition-all duration-300 cursor-pointer">
       <CardHeader>
         <img
           src={project.image}
