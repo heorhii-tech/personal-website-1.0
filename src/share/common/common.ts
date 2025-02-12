@@ -5,6 +5,8 @@ import {
   AboutMeConfig,
   ProjectConfig,
   ProjectsConfig,
+  EducationConfig,
+  ExperienceConfig
 } from "./types";
 export const HEADER_NAV: HeaderNavigation[] = [
   {
@@ -27,11 +29,7 @@ export const HEADER_NAV: HeaderNavigation[] = [
     link: "/experience",
     text: "EXPERIENCE",
   },
-  {
-    id: 4,
-    link: "/about_me",
-    text: "ABOUT ME",
-  },
+  
   {
     id: 5,
     link: "/contact",
@@ -70,7 +68,7 @@ const FULL_STACK_PROJECTS: ProjectConfig[] = [
   {
     project: "Light Space",
     year: 2023,
-   
+
     image:
       "https://firebasestorage.googleapis.com/v0/b/svitlospace-b21f8.appspot.com/o/portfolio%2F5465352030714455350%20(1).jpg?alt=media&token=92c30bbd-ab3a-4410-b27b-b6c3cffc6254",
 
@@ -96,7 +94,7 @@ const FULL_STACK_PROJECTS: ProjectConfig[] = [
     description: [
       "Tables: add, edit and delete tables.",
       "Reservations: deleting, adding reservations.",
-      "Users: managing user accounts"
+      "Users: managing user accounts",
     ],
     tech: "React,Redux,Webpack,Tailwind CSS,MUI,Stripe",
     demoLink: "https://light-space.onrender.com/",
@@ -109,18 +107,15 @@ const RESPONSIVE_PROJECTS: ProjectConfig[] = [
     year: 2024,
     image:
       "https://firebasestorage.googleapis.com/v0/b/svitlospace-b21f8.appspot.com/o/portfolio%2FfashionShop.png?alt=media&token=51c40269-91ec-4422-b3bf-4d0481e7da8f",
-    subtitle:
-      "The site is built to demonstrate adaptive design skills.",
+    subtitle: "The site is built to demonstrate adaptive design skills.",
     description: [
       "The site is built using pure Tailwind CSS without any UI libraries..",
       "Adaptation for devices: mobile, tablet, small laptop, large laptop, and higher..",
-      
     ],
     tech: "React,TypeScript,Webpack,Tailwind CSS,",
     demoLink: "https://fashion-kh8l.onrender.com/",
     gitLink: "https://github.com/heorhii-tech/fashion",
   },
-  
 ];
 
 const JAVA_SCRIPT_PROJECTS: ProjectConfig[] = [
@@ -128,22 +123,107 @@ const JAVA_SCRIPT_PROJECTS: ProjectConfig[] = [
     project: "Chuck Norris jokes",
     year: 2022,
     image:
-      "https://api.chucknorris.io/img/chucknorris_logo_coloured_small@2x.png"
-    ,
+      "https://api.chucknorris.io/img/chucknorris_logo_coloured_small@2x.png",
     subtitle:
       "The site is built to demonstrate JavaScript and adaptive design skills.",
     description: [
       "The site is built using pure Tailwind CSS without any UI libraries..",
       "Adaptation for devices: mobile, tablet, small laptop, large laptop, and higher..",
-      
     ],
     tech: "JavaScript,Webpack,Tailwind CSS,",
     demoLink: "https://chuk-norris-jokes.onrender.com/",
     gitLink: "https://github.com/heorhii-tech/Chuk_Norris_jokes",
   },
-]
+];
 export const PROJECTS_CONFIG: ProjectsConfig = {
   fullStack: FULL_STACK_PROJECTS,
   responsive: RESPONSIVE_PROJECTS,
-  javaScript: JAVA_SCRIPT_PROJECTS
+  javaScript: JAVA_SCRIPT_PROJECTS,
 };
+
+export const EDUCATION_CONFIG: EducationConfig[] = [
+  {
+    year: "2024",
+    title: "Hillel IT School",
+    tech: "React JS, Vite JS, Redux Toolkit, GitHub,MUI",
+    location: "Ukraine(remote)",
+  },
+  {
+    year: "2023",
+    title: "Matrix Master",
+    tech: "JavaScript, NODE JS, React JS, GITHUB, Express JS, MongoDB, JSON Web Token, Scrum ",
+    location: "Rotterdam",
+  },
+
+  {
+    year: "2023",
+    title: "school ITGid",
+    tech: "JavaScript",
+    location: "Ukraine(remote)",
+  },
+  {
+    year: "2022",
+    title: "school ITGid",
+    tech: "JavaScript",
+    location: "Ukraine(remote)",
+  },
+  {
+    year: "2022",
+    title: "Hillel IT School",
+    tech: "HTML 5, CSS 3",
+    location: "Ukraine(remote)",
+  },
+  {
+    year: "2013-2108",
+    title: "National University «Odesa Law Academy»",
+    tech: "Master of Law",
+    location: "Ukraine",
+  },
+];
+export const EXPERIENCE_CONFIG: ExperienceConfig[] = [
+  {
+    title: "IT EXPERIENCE",
+    description: [
+      {
+        title: "SOFT SKILLS",
+        skills: [
+          "Daily cohesive teamwork in an office environment.",
+          "Collaborate with a team to solve complex problems and make architectural decisions",
+          "Comfortable working in a dynamic, fast-paced environment ",
+          "Knowledge of UI/UX principles and experience with responsive web design ",
+          "Interest in energy data and its visualization ",
+          "Experience in finding tools to solve a problem",
+        ],
+      },
+      {
+        title: "HARD SKILLS",
+        skills: [
+          "Strong knowledge of React JS (Redux) and TypeScript",
+          "Experience with Webpack, Next.js, and Vite.js",
+          "Understanding of libraries and frameworks usage",
+          "Converting Figma designs into functional code",
+          "Proficient in using UI libraries: MUI, Ant Design, Chakra UI, Shadcn",
+          "Flexible styling with Tailwind CSS",
+        ],
+      },
+    ],
+  },
+  {
+    title: "BUSINESS EXPERIENCE",
+    description: [
+      {
+        title: "ALL SKILLS",
+        skills: [
+          "Building a business from scratch to a working model",
+          "Confidence in taking responsibility",
+          "Long-term work in a high-pressure environment",
+          "Constant team communication and brainstorming",
+          "Recruiting staff for various positions",
+          "Quick problem-solving skills"
+        ]
+        
+      },
+     
+    ]
+  }
+];

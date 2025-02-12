@@ -42,3 +42,16 @@ export interface ProjectsConfig {
     responsive: ProjectConfig[],
     javaScript: ProjectConfig[]
 }
+export interface EducationConfig {
+    year: string,
+    title: string,
+    tech: string,
+    location: string
+}
+export interface ExperienceConfig {
+    title: string,
+    description: {
+        title: string,
+        skills: string[]
+    }[]
+}

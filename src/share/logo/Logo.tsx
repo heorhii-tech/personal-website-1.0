@@ -1,7 +1,9 @@
+import Link from "next/link";
+
 const Logo = () => {
         return (
             <div className="logo-wrapper">
-                <h1 className="logo-title">GEORGE{<br/>}MADZHAROV</h1>
+                <Link href="/" className="logo-title">GEORGE{<br/>}MADZHAROV</Link>
             </div>
         );
     };
