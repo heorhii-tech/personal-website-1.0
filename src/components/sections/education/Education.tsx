@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { EducationConfig } from "../../../share/common/types";
-import EducationCarousel from "./EducarionCarousel";
+import EducationCarousel from "./EducationCarousel";
 import EducationCard from "./EducationCard";
 interface EducationProps {
     config: EducationConfig[];

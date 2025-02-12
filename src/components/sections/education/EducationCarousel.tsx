@@ -18,11 +18,11 @@ interface EducationCarouselProps {
   config: EducationConfig[];
 }
 const EducationCarousel = ({ config }: EducationCarouselProps) => {
-  console.log(config);
+  
   return (
     <Carousel className="mt-[200px] md:max-w-[650px] lg:block w-full lg:max-w-[900px] xl:max-w-[95%] mx-auto md:block">
       <CarouselContent className="-ml-1 ">
-        {config.map((education: EducationConfig, key: any) => (
+        {config.map((education, key) => (
           <CarouselItem key={key} className="pl-1 md:basis-1/2 lg:basis-1/3">
         
               <Card className="min-w-full min-h-[330px] grid">
