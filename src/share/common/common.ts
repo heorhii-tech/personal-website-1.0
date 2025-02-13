@@ -8,7 +8,8 @@ import {
   EducationConfig,
   ExperienceConfig,
   ContactConfig,
-  FooterContactConfig
+  FooterContactConfig,
+  Quote
 } from "./types";
 
 
@@ -72,6 +73,7 @@ const FULL_STACK_PROJECTS: ProjectConfig[] = [
   {
     project: "Light Space",
     year: 2023,
+    warning:"MOBILE AND DESKTOP VERSION",
 
     image:
       "https://firebasestorage.googleapis.com/v0/b/svitlospace-b21f8.appspot.com/o/portfolio%2F5465352030714455350%20(1).jpg?alt=media&token=92c30bbd-ab3a-4410-b27b-b6c3cffc6254",
@@ -100,9 +102,9 @@ const FULL_STACK_PROJECTS: ProjectConfig[] = [
       "Reservations: deleting, adding reservations.",
       "Users: managing user accounts",
     ],
-    tech: "React,Redux,Webpack,Tailwind CSS,MUI,Stripe",
-    demoLink: "https://light-space.onrender.com/",
-    gitLink: "https://github.com/heorhii-tech/light_space",
+    tech: "React,Redux,TypeScript,Webpack,Tailwind CSS,MUI,Stripe",
+    demoLink: "https://admin-panel-coworking.vercel.app/",
+    gitLink: "https://github.com/heorhii-tech/admin_panel_coworking",
   },
 ];
 const RESPONSIVE_PROJECTS: ProjectConfig[] = [
@@ -299,3 +301,18 @@ export const FOOTER_CONFIG = {
   contact:FOOTER_CONTACT,
   navigation:HEADER_NAV
 }
+
+export const QUOTES_CONFIG: Quote[] = [
+  {
+    text: "I had the pleasure of working with George during his time as a Frontend Developer at InGenius. At InGenius, George consistently demonstrated his proficiency in React, TypeScript, and JavaScript, leveraging tools like React Hooks, Redux, and React Router to craft responsive and user-friendly interfaces. His attention to detail and commitment to maintaining efficient code greatly enhanced the user experience across our platform. I’m confident George will bring the same energy and technical expertise to his next role. I highly recommend him for any opportunities where innovation and drive to succeed are key.",
+    author: "Celeste Tacconi"
+  },
+  {
+    text: "I have had the pleasure of working closely with George while building an AI-driven learning platform. From the start, he impressed me with his energy, enthusiasm, and passion for learning new technologies. He quickly became an indispensable member of the team. George has an excellent understanding of React and demonstrates a deep technical proficiency that is rare to find. His ability to quickly grasp complex concepts, adapt to new challenges, and deliver quality work has been a key factor in the success of our projects. He is not only an expert in his field but also a strong team player, always eager to collaborate and help others. His open-minded approach to problem-solving, combined with his eagerness to grow and learn, makes him a standout engineer. He is always excited to tackle new challenges, and his positive attitude makes him easy to work with and a joy to be around. He gets along with everyone and brings a collaborative spirit to the team that fosters a supportive work environment. I have no doubt that George will continue to thrive in any engineering role he takes on, and I highly recommend him for any future opportunities. His technical skills, work ethic, and enthusiasm make him an asset to any team.",
+    author: "Md Sazzadul Islam - Tech Lead"
+  },
+  {
+    text: "From the moment I interviewed George, it was clear that he was a hardworking individual with a remarkable ability to adapt to change. Choosing him for the role was a no-brainer, and I am thrilled to say that he exceeded all expectations. George quickly adapted to a completely new context, embracing new tools, workflows, and challenges with ease. His ability to deliver tangible results in just a few days stood out the most. He picked up the topic, grasped the team’s vision, and aligned himself with the direction we were heading almost immediately. Watching him evolve and grow in such a short period of time was truly rewarding and a testament to his adaptability and dedication. His technical expertise, particularly in TypeScript, modern front-end frameworks, and his proactive use of AI tools like v0 and Cursor to accelerate development, truly set him apart. George leveraged these tools to improve efficiency and deliver high-quality solutions that matched the team’s expectations and vision. George’s ability to integrate into the team, his collaborative spirit, and his positive attitude made him an invaluable part of the project. I am proud to have worked with George and have no doubt that he will continue to achieve great things in his career. I wholeheartedly recommend him to any team seeking a talented, adaptable, and driven professional.",
+    author: "Dr. Hernani Costa - Direct Manager"
+  }
+];

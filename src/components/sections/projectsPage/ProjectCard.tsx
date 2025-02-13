@@ -13,20 +13,33 @@ import {
 } from "@/components/ui/accordion";
 
 import { ProjectConfig } from "@/share/common/types";
+import { useEffect, useState } from "react";
+import ProjectSkeleton from "../../skeletons/ProjectSkeleton";
 
 interface ProjectCardProps {
   project: ProjectConfig;
 }
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = project.image;
+    img.onload = () => setIsLoaded(true);
+  }, [project.image]);
   return (
     <Card className="hover:border-white transition-all duration-300 cursor-pointer">
       <CardHeader>
-        <img
-          src={project.image}
-          alt={project.project}
-          className="w-full h-48 object-cover "
-        />
+        {!isLoaded ? (
+          <ProjectSkeleton />
+        ) : (
+          <img
+            src={project.image}
+            alt={project.project}
+            className="w-full h-48 object-cover "
+          />
+        )}
       </CardHeader>
       <CardContent>
         <h3 className="text-xl font-semibold text-white mt-[10px]">{project.project}</h3>

@@ -1,12 +1,23 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import { IntroConfig } from "../../../share/common/types";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import MatrixEffect from "../../animations/MatrixEffect";
+import MainImage from "@/components/skeletons/MainImage";
+
 interface IntroProps {
   config: IntroConfig;
 }
 const Intro = ({ config }: IntroProps) => {
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
+  useEffect(() => {
+    const image = new Image();
+    image.src = config.image;
+    image.onload = () => {
+      setIsImageLoaded(true);
+    };
+  }, [config.image]);
   return (
     <div className="section-intro__wrapper">
       <div className="section-intro__content relative">
@@ -30,12 +41,18 @@ const Intro = ({ config }: IntroProps) => {
         </div>
       </div>
       <div className="section-intro__media">
-        <img
-          className="section-intro__image"
-          src={config.image}
-          alt=""
-         
-        />
+        {!isImageLoaded ? (
+          <MainImage />
+        ) : (
+          <img
+            className={`section-intro__image transition-opacity duration-500 ${
+              isImageLoaded ? "opacity-100" : "opacity-0"
+            }`}
+            src={config.image}
+            alt="Intro Image"
+            
+          />
+        )}
       </div>
     </div>
   );
