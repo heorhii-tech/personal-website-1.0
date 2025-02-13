@@ -7,7 +7,8 @@ import {
   ProjectsConfig,
   EducationConfig,
   ExperienceConfig,
-  ContactConfig
+  ContactConfig,
+  FooterContactConfig
 } from "./types";
 
 
@@ -258,4 +259,43 @@ export const CONTACT_CONFIG: ContactConfig = {
       link:"https://github.com/heorhii-tech"
     }
   ]
+}
+const FOOTER_CONTACT: FooterContactConfig = {
+  prof:"FRONTEND DEVELOPER",
+  adress:"Rotterdam, The Netherlands",
+  phone:"+31 6 38 69 95 61",
+  email:"heorhiimadzharov@gmail.com",
+  socialMedia:[
+    {
+      id:"tel",
+      
+      title:"+31 6 38 69 95 61",
+    },{
+      id:"linkedin",
+     
+      title:"GEORGE MADZHAROV",
+      link:"https://www.linkedin.com/in/heorhii-madzharov/"
+    },
+    {
+      id:"email",
+      
+      title:"heorhiimadzharov@gmail.com",
+      link:"heorhiimadzharov@gmail.com"
+    },
+    {
+      id:"github",
+      
+      title:"GIT HUB",
+      link:"https://github.com/heorhii-tech"
+    },{
+      id:"whatsapp",
+      
+      title:"+31 6 38 69 95 61",
+      link:"+380983007855"
+    }
+  ]
+}
+export const FOOTER_CONFIG = {
+  contact:FOOTER_CONTACT,
+  navigation:HEADER_NAV
 }

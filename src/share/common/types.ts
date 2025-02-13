@@ -64,3 +64,14 @@ export interface ContactConfig {
         link?: string
     }[]
 }
+export interface FooterContactConfig {
+    prof: string,
+    adress: string,
+    phone: string,
+    email: string,
+    socialMedia: {
+        id: string,
+        title: string,
+        link?: string
+    }[]
+}

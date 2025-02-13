@@ -20,12 +20,12 @@ interface EducationCarouselProps {
 const EducationCarousel = ({ config }: EducationCarouselProps) => {
   
   return (
-    <Carousel className="mt-[200px] md:max-w-[650px] lg:block w-full lg:max-w-[900px] xl:max-w-[95%] mx-auto md:block">
+    <Carousel className=" md:max-w-[650px] lg:block w-full lg:max-w-[900px] xl:max-w-[95%] mx-auto md:block">
       <CarouselContent className="-ml-1 ">
         {config.map((education, key) => (
           <CarouselItem key={key} className="pl-1 md:basis-1/2 lg:basis-1/3">
         
-              <Card className="min-w-full min-h-[330px] grid">
+              <Card className="min-w-full min-h-[332px] grid">
                 <CardHeader className="justify-between h-[142px]">
                   <CardTitle className="text-lg text-white">
                     {education.title}

@@ -29,8 +29,8 @@
 }
 
 .about-me{
-    @apply py-[60px]  gap-[30px];
-    @apply lg:flex-row lg:py-[60px];
+    @apply pt-[60px]  gap-[30px];
+    @apply lg:flex-row;
 }
 .about-me__container{
     @apply flex items-center justify-between mt-[20px] lg:mt-[40px] ;
@@ -71,6 +71,10 @@
     @apply max-w-sm shadow-lg bg-transparent;
 }
 
+.education{
+    @apply py-[150px];
+}
+
 .experience-block__title{
     @apply text-[18px] text-center bg-zinc-100 w-fit text-zinc-900 px-[16px] py-[8px] mt-[40px];
 }
@@ -84,7 +88,8 @@
 }
 
 .contact{
-    @apply mt-[60px] md:mt-[80px] lg:mt-[100px] xl:mt-[120px];
+    @apply mt-[60px] md:mt-[80px] lg:mt-[100px] xl:mt-[120px] pb-[60px];
+    @apply md:pb-[80px] lg:pb-[100px] xl:pb-[120px];
 }
 .contact__title{
     @apply text-[18px] w-full text-center bg-zinc-100  text-zinc-900 px-[16px] py-[8px] mt-[40px];
@@ -94,8 +99,8 @@
     @apply mt-[40px] text-[16px] text-text-main tracking-wider leading-relaxed;
 }
 .contact__cards{
-    @apply mt-[60px] grid grid-cols-1 gap-[20px] mx-auto  items-center;
-    @apply md:grid-cols-2 md:mt-[40px] lg:mt-[60px] xl:mt-[80px];
+    @apply mt-[100px] grid grid-cols-1 gap-[20px] mx-auto  items-center;
+    @apply md:grid-cols-2 md:mt-[100px] lg:mt-[100px] xl:mt-[100px];
 }
 .contact-card{
     @apply cursor-pointer hover:border-white transition-all duration-300 border border-[#27272a] p-[20px];
