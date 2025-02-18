@@ -50,7 +50,6 @@ const Intro = ({ config }: IntroProps) => {
             }`}
             src={config.image}
             alt="Intro Image"
-            
           />
         )}
       </div>

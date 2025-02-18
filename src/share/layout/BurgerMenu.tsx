@@ -11,7 +11,7 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 
-import {  Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import { HeaderConfig } from "../common/types";
 import Link from "next/link";
 
@@ -30,7 +30,10 @@ const BurgerMenu = ({
   return (
     <Drawer open={isOpen} onOpenChange={setIsOpen}>
       <DrawerTrigger onClick={() => setIsOpen(true)}>
-        <Menu style={{width: "38px", height: "38px"}} className=" text-white dark:text-zinc-200" />
+        <Menu
+          style={{ width: "38px", height: "38px" }}
+          className=" text-white dark:text-zinc-200"
+        />
       </DrawerTrigger>
       <DrawerContent>
         <DrawerHeader>
@@ -40,7 +43,18 @@ const BurgerMenu = ({
           {/* Trigger close on link click */}
           <div className="burger-nav__wrapper container">
             {navigation.map((item) => (
-              <Link style={{ backgroundColor: "black", width: "100%",padding: "10px",textAlign: "center" }}  href={item.link} type="button" key={item.id}  onClick={handleClose}>
+              <Link
+                style={{
+                  backgroundColor: "black",
+                  width: "100%",
+                  padding: "10px",
+                  textAlign: "center",
+                }}
+                href={item.link}
+                type="button"
+                key={item.id}
+                onClick={handleClose}
+              >
                 {item.text}
               </Link>
             ))}

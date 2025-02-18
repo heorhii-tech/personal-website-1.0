@@ -1,7 +1,6 @@
-'use client';
+"use client";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-
 
 interface Column {
   id: number;
@@ -12,15 +11,16 @@ interface Column {
 const MatrixEffect: React.FC = () => {
   const [isLargeScreen, setIsLargeScreen] = useState(false);
 
-useEffect(() => {
-  const mediaQuery = window.matchMedia("(min-width: 1280px)");
-  setIsLargeScreen(mediaQuery.matches);
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(min-width: 1280px)");
+    setIsLargeScreen(mediaQuery.matches);
 
-  const handleChange = (event: MediaQueryListEvent) => setIsLargeScreen(event.matches);
-  mediaQuery.addEventListener("change", handleChange);
+    const handleChange = (event: MediaQueryListEvent) =>
+      setIsLargeScreen(event.matches);
+    mediaQuery.addEventListener("change", handleChange);
 
-  return () => mediaQuery.removeEventListener("change", handleChange);
-}, []);
+    return () => mediaQuery.removeEventListener("change", handleChange);
+  }, []);
   const [columns, setColumns] = useState<Column[]>([]);
   const columnCount = isLargeScreen ? 40 : 25; // Количество столбцов
   const speed = 3; // Скорость падения

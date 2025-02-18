@@ -7,9 +7,7 @@ interface QuotesComponentProps {
   config: Quote[];
 }
 
-export default function QuoteComponent({
-  config,
-}: QuotesComponentProps) {
+export default function QuoteComponent({ config }: QuotesComponentProps) {
   const [index, setIndex] = useState<number>(0);
   const [fade, setFade] = useState<boolean>(false);
 

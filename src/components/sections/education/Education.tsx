@@ -4,7 +4,7 @@ import { EducationConfig } from "../../../share/common/types";
 import EducationCarousel from "./EducationCarousel";
 import EducationCard from "./EducationCard";
 interface EducationProps {
-    config: EducationConfig[];
+  config: EducationConfig[];
 }
 export const Education = ({ config }: EducationProps) => {
   const [isLaptop, setIsLaptop] = useState(false);
@@ -26,9 +26,9 @@ export const Education = ({ config }: EducationProps) => {
         <EducationCarousel config={config} />
       ) : (
         <div className="mt-[40px] education-list__wrapper flex flex-col gap-[20px] mx-auto justify-center items-center max-w-full px-[20px]">
-        {config.map((education, index) => (
-          <EducationCard key={index} config={education} />
-        ))}
+          {config.map((education, index) => (
+            <EducationCard key={index} config={education} />
+          ))}
         </div>
       )}
     </section>

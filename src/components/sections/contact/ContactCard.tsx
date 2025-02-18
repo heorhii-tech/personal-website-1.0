@@ -37,7 +37,12 @@ const ContactCard = ({ config }: ContactCardProps) => {
 
   return (
     <div className="contact-card" style={{ width: "100%" }}>
-      <a className="contact-card__link" href={href} target="_blank" rel="noopener noreferrer">
+      <a
+        className="contact-card__link"
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {Icon ? <Icon size={20} /> : null}
         {config.title}
       </a>

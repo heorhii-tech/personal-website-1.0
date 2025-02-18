@@ -1,111 +1,106 @@
-.section-intro{
-    @apply py-[60px];
+.section-intro {
+  @apply py-[60px];
 }
-.section-intro__wrapper{
-    @apply flex flex-col justify-between gap-[20px] items-center min-h-[calc(100vh-260px)];
-    @apply xl:flex-row mt-[20px] lg:flex-row lg:items-stretch lg:mt-[120px];
-    
+.section-intro__wrapper {
+  @apply flex flex-col justify-between gap-[20px] items-center min-h-[calc(100vh-260px)];
+  @apply xl:flex-row mt-[20px] lg:flex-row lg:items-stretch lg:mt-[120px];
 }
-.section-intro__content{
-    @apply flex flex-col items-center order-2 justify-between h-full relative;
-    @apply lg:order-1  gap-[60px] lg:pt-[40px]  lg:h-[450px] xl:h-[550px];
+.section-intro__content {
+  @apply flex flex-col items-center order-2 justify-between h-full relative;
+  @apply lg:order-1  gap-[60px] lg:pt-[40px]  lg:h-[450px] xl:h-[550px];
 }
-.section-intro__media{
-    @apply flex flex-col order-1  justify-between min-h-full gap-[60px];
-    @apply lg:order-2;
-    
+.section-intro__media {
+  @apply flex flex-col order-1  justify-between min-h-full gap-[60px];
+  @apply lg:order-2;
 }
-.section-intro__image{
-    @apply max-w-[350px] sm:max-w-[450px] xl:max-w-[550px] ;
+.section-intro__image {
+  @apply max-w-[350px] sm:max-w-[450px] xl:max-w-[550px];
 }
-.section-intro__title{
-    @apply text-[24px] text-center;
-    @apply md:text-[28px] lg:text-[40px] xl:text-[50px] xl:max-w-[650px]  font-bold text-text-main;
+.section-intro__title {
+  @apply text-[24px] text-center;
+  @apply md:text-[28px] lg:text-[40px] xl:text-[50px] xl:max-w-[650px]  font-bold text-text-main;
 }
-.section-intro__buttons{
-    @apply flex  gap-4  justify-center  w-full z-[10];
-    
-    
+.section-intro__buttons {
+  @apply flex  gap-4  justify-center  w-full z-[10];
 }
 
-.about-me{
-    @apply pt-[60px]  gap-[30px];
-    @apply lg:flex-row;
+.about-me {
+  @apply pt-[60px]  gap-[30px];
+  @apply lg:flex-row;
 }
-.about-me__container{
-    @apply flex items-center justify-between mt-[20px] lg:mt-[40px] ;
+.about-me__container {
+  @apply flex items-center justify-between mt-[20px] lg:mt-[40px];
 }
-.about-me__media{
-    @apply flex items-center;
+.about-me__media {
+  @apply flex items-center;
 }
-.about-me__content{
-    @apply flex flex-col gap-[30px];
-    @apply lg:max-w-[42%] lg:justify-between;
+.about-me__content {
+  @apply flex flex-col gap-[30px];
+  @apply lg:max-w-[42%] lg:justify-between;
 }
-.about-me__title{
-    @apply bg-zinc-100 text-zinc-900 w-fit px-[16px] py-[8px];
-    
+.about-me__title {
+  @apply bg-zinc-100 text-zinc-900 w-fit px-[16px] py-[8px];
 }
-.about-me__image{
-    @apply sm:max-h-[400px] mx-auto w-full lg:max-h-[400px] ;
+.about-me__image {
+  @apply sm:max-h-[400px] mx-auto w-full lg:max-h-[400px];
 }
-.about-me__description-wrapper{
-    @apply flex flex-col gap-[16px];
+.about-me__description-wrapper {
+  @apply flex flex-col gap-[16px];
 }
 .about-me__description {
-    @apply border border-[#27272a] p-[16px] text-text-main bg-transparent text-lg leading-relaxed;
+  @apply border border-[#27272a] p-[16px] text-text-main bg-transparent text-lg leading-relaxed;
 }
 
-.projects{
-    @apply mt-[40px]
+.projects {
+  @apply mt-[40px];
 }
-.projects__wrapper{
-    @apply mt-[40px] mx-auto flex flex-col gap-[30px];
+.projects__wrapper {
+  @apply mt-[40px] mx-auto flex flex-col gap-[30px];
 }
-.projects__type-wrapper{
-    @apply mt-[40px] mx-auto flex flex-col gap-[30px] items-center;
-    @apply md:flex-row md:flex-wrap md:justify-between md:gap-[40px] xl:justify-start;
-}
-
-.project-card{
-    @apply max-w-sm shadow-lg bg-transparent;
+.projects__type-wrapper {
+  @apply mt-[40px] mx-auto flex flex-col gap-[30px] items-center;
+  @apply md:flex-row md:flex-wrap md:justify-between md:gap-[40px] xl:justify-start;
 }
 
-.education{
-    @apply py-[150px];
+.project-card {
+  @apply max-w-sm shadow-lg bg-transparent;
 }
 
-.experience-block__title{
-    @apply text-[18px] text-center bg-zinc-100 w-fit text-zinc-900 px-[16px] py-[8px] mt-[40px];
-}
-.experience-block__description{
-    @apply mt-[40px]
-}
-.experience-block__skills{
-    @apply text-[16px] tracking-wider leading-relaxed;
-    list-style-type: square; /* Круглые точки */
-    padding-left: 20px; /* Отступ слева */
+.education {
+  @apply py-[150px];
 }
 
-.contact{
-    @apply mt-[60px] md:mt-[80px] lg:mt-[100px] xl:mt-[120px] pb-[60px];
-    @apply md:pb-[80px] lg:pb-[100px] xl:pb-[120px];
+.experience-block__title {
+  @apply text-[18px] text-center bg-zinc-100 w-fit text-zinc-900 px-[16px] py-[8px] mt-[40px];
 }
-.contact__title{
-    @apply text-[18px] w-full text-center bg-zinc-100  text-zinc-900 px-[16px] py-[8px] mt-[40px];
-    @apply md:w-fit;
+.experience-block__description {
+  @apply mt-[40px];
 }
-.contact__description{
-    @apply mt-[40px] text-[16px] text-text-main tracking-wider leading-relaxed;
+.experience-block__skills {
+  @apply text-[16px] tracking-wider leading-relaxed;
+  list-style-type: square; /* Круглые точки */
+  padding-left: 20px; /* Отступ слева */
 }
-.contact__cards{
-    @apply mt-[100px] grid grid-cols-1 gap-[20px] mx-auto  items-center;
-    @apply md:grid-cols-2 md:mt-[100px] lg:mt-[100px] xl:mt-[100px];
+
+.contact {
+  @apply mt-[60px] md:mt-[80px] lg:mt-[100px] xl:mt-[120px] pb-[60px];
+  @apply md:pb-[80px] lg:pb-[100px] xl:pb-[120px];
 }
-.contact-card{
-    @apply cursor-pointer hover:border-white transition-all duration-300 border border-[#27272a] p-[20px];
+.contact__title {
+  @apply text-[18px] w-full text-center bg-zinc-100  text-zinc-900 px-[16px] py-[8px] mt-[40px];
+  @apply md:w-fit;
 }
-.contact-card__link{
-    @apply  text-[16px] w-full tracking-wider leading-relaxed text-text-main flex items-center justify-center gap-[10px];
-    @apply lg:hover:text-white lg:justify-start;
+.contact__description {
+  @apply mt-[40px] text-[16px] text-text-main tracking-wider leading-relaxed;
+}
+.contact__cards {
+  @apply mt-[100px] grid grid-cols-1 gap-[20px] mx-auto  items-center;
+  @apply md:grid-cols-2 md:mt-[100px] lg:mt-[100px] xl:mt-[100px];
+}
+.contact-card {
+  @apply cursor-pointer hover:border-white transition-all duration-300 border border-[#27272a] p-[20px];
+}
+.contact-card__link {
+  @apply text-[16px] w-full tracking-wider leading-relaxed text-text-main flex items-center justify-center gap-[10px];
+  @apply lg:hover:text-white lg:justify-start;
 }

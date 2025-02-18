@@ -1,5 +1,9 @@
 import React from "react";
-import { INTRO_FIRST_SECTION, ABOUT_ME_CONFIG, QUOTES_CONFIG } from "@share/common/common";
+import {
+  INTRO_FIRST_SECTION,
+  ABOUT_ME_CONFIG,
+  QUOTES_CONFIG,
+} from "@share/common/common";
 import Intro from "@/components/sections/homePage/Intro";
 import AboutMe from "@/components/sections/homePage/AboutMe";
 import QuoteComponent from "@/components/sections/homePage/QuoteSlider";

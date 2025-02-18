@@ -1,4 +1,3 @@
-
 import { FooterContactConfig } from "@/share/common/types";
 import { Mail, Phone, Linkedin, Github, MessageCircle } from "lucide-react";
 
@@ -13,7 +12,6 @@ const iconMap = {
 const FooterContact = ({ config }: { config: FooterContactConfig }) => {
   return (
     <div className="footer-contact">
-      
       <div className="footer-contact__info">
         <p>{config.prof}</p>
         <p>{config.adress}</p>

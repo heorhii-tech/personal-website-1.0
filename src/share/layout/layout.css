@@ -26,24 +26,22 @@
   @apply mt-[60px] py-[30px] flex flex-col justify-between;
   @apply sm:flex-row;
 }
-.footer-contact{
-    @apply order-2  py-[30px];
-    @apply sm:order-1
+.footer-contact {
+  @apply order-2  py-[30px];
+  @apply sm:order-1;
 }
 .footer-contact__info {
-  @apply flex flex-col gap-2 mt-[30px] w-fit ;
-  @apply sm:mt-[0] sm:gap-4
+  @apply flex flex-col gap-2 mt-[30px] w-fit;
+  @apply sm:mt-[0] sm:gap-4;
 }
-.footer-contact__social{
-    @apply flex gap-4 mt-[30px] ;
-   
+.footer-contact__social {
+  @apply flex gap-4 mt-[30px];
 }
-.footer-nav{
-    @apply order-1 flex flex-col gap-2;
-    @apply sm:order-2
+.footer-nav {
+  @apply order-1 flex flex-col gap-2;
+  @apply sm:order-2;
 }
-.footer-nav__link{
-    @apply text-zinc-900 p-[8px] bg-zinc-200 transition-all duration-300 antialiased tracking-wide;
-    @apply sm:w-[200px]  lg:hover:bg-zinc-400 
-    
+.footer-nav__link {
+  @apply text-zinc-900 p-[8px] bg-zinc-200 transition-all duration-300 antialiased tracking-wide;
+  @apply sm:w-[200px]  lg:hover:bg-zinc-400;
 }

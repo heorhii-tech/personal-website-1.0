@@ -9,9 +9,8 @@ import {
   ExperienceConfig,
   ContactConfig,
   FooterContactConfig,
-  Quote
+  Quote,
 } from "./types";
-
 
 export const HEADER_NAV: HeaderNavigation[] = [
   {
@@ -34,7 +33,7 @@ export const HEADER_NAV: HeaderNavigation[] = [
     link: "/experience",
     text: "EXPERIENCE",
   },
-  
+
   {
     id: 5,
     link: "/contact",
@@ -69,11 +68,41 @@ export const ABOUT_ME_CONFIG: AboutMeConfig = {
     "I am constantly learning, exploring new technologies, and seeking exciting opportunities. My drive for innovation and continuous growth makes me a valuable asset to any development team, always ready to take on new challenges!",
   ],
 };
+const RESPONSIVE_PROJECTS: ProjectConfig[] = [
+  {
+    project: "E commerce webshop",
+    year: 2025,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/svitlospace-b21f8.appspot.com/o/portfolio%2Fe-commerce.png?alt=media&token=47e5856b-3c6d-41c7-a374-d8bc4f2e3321",
+    subtitle: "Cart logic via Redux and Local storage. Responsive Design.",
+    description: [
+      "Implemented using Next.js and the Shadcn UI library. The logic for adding and removing items from the cart, as well as changing item quantities, has been implemented.",
+      "Adaptation for devices: mobile, tablet, small laptop, large laptop, and higher..",
+    ],
+    tech: "Next Js, EsLint,React,TypeScript,Tailwind CSS,Shadcn UI ",
+    demoLink: "https://e-commerce-shop-kazr.vercel.app/",
+    gitLink: "https://github.com/heorhii-tech/e-commerce-shop",
+  },
+  {
+    project: "Fashion Shop",
+    year: 2024,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/svitlospace-b21f8.appspot.com/o/portfolio%2FfashionShop.png?alt=media&token=51c40269-91ec-4422-b3bf-4d0481e7da8f",
+    subtitle: "The site is built to demonstrate adaptive design skills.",
+    description: [
+      "The site is built using pure Tailwind CSS without any UI libraries..",
+      "Adaptation for devices: mobile, tablet, small laptop, large laptop, and higher..",
+    ],
+    tech: "React,TypeScript,Webpack,Tailwind CSS,",
+    demoLink: "https://fashion-kh8l.onrender.com/",
+    gitLink: "https://github.com/heorhii-tech/fashion",
+  },
+];
 const FULL_STACK_PROJECTS: ProjectConfig[] = [
   {
     project: "Light Space",
     year: 2023,
-    warning:"MOBILE AND DESKTOP VERSION",
+    warning: "MOBILE AND DESKTOP VERSION",
 
     image:
       "https://firebasestorage.googleapis.com/v0/b/svitlospace-b21f8.appspot.com/o/portfolio%2F5465352030714455350%20(1).jpg?alt=media&token=92c30bbd-ab3a-4410-b27b-b6c3cffc6254",
@@ -105,22 +134,6 @@ const FULL_STACK_PROJECTS: ProjectConfig[] = [
     tech: "React,Redux,TypeScript,Webpack,Tailwind CSS,MUI,Stripe",
     demoLink: "https://admin-panel-coworking.vercel.app/",
     gitLink: "https://github.com/heorhii-tech/admin_panel_coworking",
-  },
-];
-const RESPONSIVE_PROJECTS: ProjectConfig[] = [
-  {
-    project: "Fashion Shop",
-    year: 2024,
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/svitlospace-b21f8.appspot.com/o/portfolio%2FfashionShop.png?alt=media&token=51c40269-91ec-4422-b3bf-4d0481e7da8f",
-    subtitle: "The site is built to demonstrate adaptive design skills.",
-    description: [
-      "The site is built using pure Tailwind CSS without any UI libraries..",
-      "Adaptation for devices: mobile, tablet, small laptop, large laptop, and higher..",
-    ],
-    tech: "React,TypeScript,Webpack,Tailwind CSS,",
-    demoLink: "https://fashion-kh8l.onrender.com/",
-    gitLink: "https://github.com/heorhii-tech/fashion",
   },
 ];
 
@@ -225,94 +238,96 @@ export const EXPERIENCE_CONFIG: ExperienceConfig[] = [
           "Long-term work in a high-pressure environment",
           "Constant team communication and brainstorming",
           "Recruiting staff for various positions",
-          "Quick problem-solving skills"
-        ]
-        
+          "Quick problem-solving skills",
+        ],
       },
-     
-    ]
-  }
+    ],
+  },
 ];
 
 export const CONTACT_CONFIG: ContactConfig = {
   title: "CONTACT ME",
-  description: "I am always interested in new opportunities and collaborations. If you have any questions or would like to get in touch, please don't hesitate to reach out to me. I currently live in Rotterdam near the Alexandrium shopping center and am available through various communication channels.",
-  cards_info:[
+  description:
+    "I am always interested in new opportunities and collaborations. If you have any questions or would like to get in touch, please don't hesitate to reach out to me. I currently live in Rotterdam near the Alexandrium shopping center and am available through various communication channels.",
+  cards_info: [
     {
-      id:"tel",
-      
-      title:"+31 6 38 69 95 61",
-    },{
-      id:"linkedin",
-     
-      title:"GEORGE MADZHAROV",
-      link:"https://www.linkedin.com/in/heorhii-madzharov/"
+      id: "tel",
+
+      title: "+31 6 38 69 95 61",
     },
     {
-      id:"email",
-      
-      title:"heorhiimadzharov@gmail.com",
-      link:"heorhiimadzharov@gmail.com"
+      id: "linkedin",
+
+      title: "GEORGE MADZHAROV",
+      link: "https://www.linkedin.com/in/heorhii-madzharov/",
     },
     {
-      id:"github",
-      
-      title:"GIT HUB",
-      link:"https://github.com/heorhii-tech"
-    }
-  ]
-}
+      id: "email",
+
+      title: "heorhiimadzharov@gmail.com",
+      link: "heorhiimadzharov@gmail.com",
+    },
+    {
+      id: "github",
+
+      title: "GIT HUB",
+      link: "https://github.com/heorhii-tech",
+    },
+  ],
+};
 const FOOTER_CONTACT: FooterContactConfig = {
-  prof:"FRONTEND DEVELOPER",
-  adress:"Rotterdam, The Netherlands",
-  phone:"+31 6 38 69 95 61",
-  email:"heorhiimadzharov@gmail.com",
-  socialMedia:[
+  prof: "FRONTEND DEVELOPER",
+  adress: "Rotterdam, The Netherlands",
+  phone: "+31 6 38 69 95 61",
+  email: "heorhiimadzharov@gmail.com",
+  socialMedia: [
     {
-      id:"tel",
-      
-      title:"+31 6 38 69 95 61",
-    },{
-      id:"linkedin",
-     
-      title:"GEORGE MADZHAROV",
-      link:"https://www.linkedin.com/in/heorhii-madzharov/"
+      id: "tel",
+
+      title: "+31 6 38 69 95 61",
     },
     {
-      id:"email",
-      
-      title:"heorhiimadzharov@gmail.com",
-      link:"heorhiimadzharov@gmail.com"
+      id: "linkedin",
+
+      title: "GEORGE MADZHAROV",
+      link: "https://www.linkedin.com/in/heorhii-madzharov/",
     },
     {
-      id:"github",
-      
-      title:"GIT HUB",
-      link:"https://github.com/heorhii-tech"
-    },{
-      id:"whatsapp",
-      
-      title:"+31 6 38 69 95 61",
-      link:"+380983007855"
-    }
-  ]
-}
+      id: "email",
+
+      title: "heorhiimadzharov@gmail.com",
+      link: "heorhiimadzharov@gmail.com",
+    },
+    {
+      id: "github",
+
+      title: "GIT HUB",
+      link: "https://github.com/heorhii-tech",
+    },
+    {
+      id: "whatsapp",
+
+      title: "+31 6 38 69 95 61",
+      link: "+380983007855",
+    },
+  ],
+};
 export const FOOTER_CONFIG = {
-  contact:FOOTER_CONTACT,
-  navigation:HEADER_NAV
-}
+  contact: FOOTER_CONTACT,
+  navigation: HEADER_NAV,
+};
 
 export const QUOTES_CONFIG: Quote[] = [
   {
     text: "I had the pleasure of working with George during his time as a Frontend Developer at InGenius. At InGenius, George consistently demonstrated his proficiency in React, TypeScript, and JavaScript, leveraging tools like React Hooks, Redux, and React Router to craft responsive and user-friendly interfaces. His attention to detail and commitment to maintaining efficient code greatly enhanced the user experience across our platform. I’m confident George will bring the same energy and technical expertise to his next role. I highly recommend him for any opportunities where innovation and drive to succeed are key.",
-    author: "Celeste Tacconi"
+    author: "Celeste Tacconi",
   },
   {
     text: "I have had the pleasure of working closely with George while building an AI-driven learning platform. From the start, he impressed me with his energy, enthusiasm, and passion for learning new technologies. He quickly became an indispensable member of the team. George has an excellent understanding of React and demonstrates a deep technical proficiency that is rare to find. His ability to quickly grasp complex concepts, adapt to new challenges, and deliver quality work has been a key factor in the success of our projects. He is not only an expert in his field but also a strong team player, always eager to collaborate and help others. His open-minded approach to problem-solving, combined with his eagerness to grow and learn, makes him a standout engineer. He is always excited to tackle new challenges, and his positive attitude makes him easy to work with and a joy to be around. He gets along with everyone and brings a collaborative spirit to the team that fosters a supportive work environment. I have no doubt that George will continue to thrive in any engineering role he takes on, and I highly recommend him for any future opportunities. His technical skills, work ethic, and enthusiasm make him an asset to any team.",
-    author: "Md Sazzadul Islam - Tech Lead"
+    author: "Md Sazzadul Islam - Tech Lead",
   },
   {
     text: "From the moment I interviewed George, it was clear that he was a hardworking individual with a remarkable ability to adapt to change. Choosing him for the role was a no-brainer, and I am thrilled to say that he exceeded all expectations. George quickly adapted to a completely new context, embracing new tools, workflows, and challenges with ease. His ability to deliver tangible results in just a few days stood out the most. He picked up the topic, grasped the team’s vision, and aligned himself with the direction we were heading almost immediately. Watching him evolve and grow in such a short period of time was truly rewarding and a testament to his adaptability and dedication. His technical expertise, particularly in TypeScript, modern front-end frameworks, and his proactive use of AI tools like v0 and Cursor to accelerate development, truly set him apart. George leveraged these tools to improve efficiency and deliver high-quality solutions that matched the team’s expectations and vision. George’s ability to integrate into the team, his collaborative spirit, and his positive attitude made him an invaluable part of the project. I am proud to have worked with George and have no doubt that he will continue to achieve great things in his career. I wholeheartedly recommend him to any team seeking a talented, adaptable, and driven professional.",
-    author: "Dr. Hernani Costa - Direct Manager"
-  }
+    author: "Dr. Hernani Costa - Direct Manager",
+  },
 ];

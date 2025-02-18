@@ -4,10 +4,9 @@ import { Card } from "@/components/ui/card";
 const CodeComponent = () => {
   return (
     <Card className="hidden lg:max-w-[34rem] lg:block mx-auto shadow-lg xl:max-h-[1125px] 2xl:max-h-[1037px] overflow-y-hidden bg-black text-white border-none">
-    
-        <pre className="bg-black overflow-x-auto ">
-          <code className="text-green-400">
-{`import React from "react";
+      <pre className="bg-black overflow-x-auto ">
+        <code className="text-green-400">
+          {`import React from "react";
 import { AboutMeConfig } from "../../share/common/types";
 
 interface AboutMeProps {
@@ -67,9 +66,8 @@ export default AboutMe;
 }
 
 `}
-          </code>
-        </pre>
-     
+        </code>
+      </pre>
     </Card>
   );
 };

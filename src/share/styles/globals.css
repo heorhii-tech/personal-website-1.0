@@ -5,8 +5,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.container{
-    @apply px-4 md:px-5 2xl:max-w-[1440px];
+.container {
+  @apply px-4 md:px-5 2xl:max-w-[1440px];
 }
 :root {
   --background: #ffffff;
