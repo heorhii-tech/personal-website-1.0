@@ -33,7 +33,7 @@ const Intro = ({ config }: IntroProps) => {
           </Button>
           <Button className="w-full " variant="secondary">
             {config.secondaryButtonLink && (
-              <Link className="" href={config.secondaryButtonLink}>
+              <Link className="w-full h-full flex items-center justify-center" href={config.secondaryButtonLink}>
                 {config.secondaryButtonTitle}
               </Link>
             )}
