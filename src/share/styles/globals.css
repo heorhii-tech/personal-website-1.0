@@ -9,17 +9,9 @@
   @apply px-4 md:px-5 2xl:max-w-[1440px];
 }
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000; 
+  --foreground: #ededed; 
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #000000;
-    --foreground: #ededed;
-  }
-}
-
 body {
   color: var(--foreground);
   background: var(--background);
