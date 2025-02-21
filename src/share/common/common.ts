@@ -54,7 +54,7 @@ export const INTRO_FIRST_SECTION: IntroConfig = {
   primaryButtonLink: "contact",
   secondaryButtonTitle: "OPEN CV",
   secondaryButtonLink:
-    "https://firebasestorage.googleapis.com/v0/b/svitlospace-b21f8.appspot.com/o/portfolio%2FCV%20George%20Madzharov%20(1).pdf?alt=media&token=83899362-6f04-4a67-8244-340cad700776",
+    "https://firebasestorage.googleapis.com/v0/b/svitlospace-b21f8.appspot.com/o/portfolio%2FCV-George_Madzharov.pdf?alt=media&token=c119403d-30d2-4143-86ee-78f1c4949c66",
 };
 
 export const ABOUT_ME_CONFIG: AboutMeConfig = {
