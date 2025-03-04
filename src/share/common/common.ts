@@ -70,6 +70,20 @@ export const ABOUT_ME_CONFIG: AboutMeConfig = {
 };
 const RESPONSIVE_PROJECTS: ProjectConfig[] = [
   {
+    project: "VirtualR",
+    year: 2025,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/svitlospace-b21f8.appspot.com/o/portfolio%2FvirtualR.png?alt=media&token=d28e6151-41a8-4493-93f6-0608515f0efa",
+    subtitle: "The site is built to demonstrate adaptive design skills.",
+    description: [
+      "The site is built using  React, MUI, and Tailwind CSS ",
+      "Auth form. Adaptation for devices: mobile, tablet, small laptop, large laptop, and higher..",
+    ],
+    tech: "React,ViteJS, MUI, Tailwind CSS,",
+    demoLink: "https://virtual-r-three-peach.vercel.app/",
+    gitLink: "https://github.com/heorhii-tech/VirtualR",
+  },
+  {
     project: "E commerce webshop",
     year: 2025,
     image:
@@ -97,6 +111,8 @@ const RESPONSIVE_PROJECTS: ProjectConfig[] = [
     demoLink: "https://fashion-kh8l.onrender.com/",
     gitLink: "https://github.com/heorhii-tech/fashion",
   },
+  
+
 ];
 const FULL_STACK_PROJECTS: ProjectConfig[] = [
   {
@@ -138,6 +154,20 @@ const FULL_STACK_PROJECTS: ProjectConfig[] = [
 ];
 
 const JAVA_SCRIPT_PROJECTS: ProjectConfig[] = [
+  {
+    project: "Shoes Shop",
+    year: 2025,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/svitlospace-b21f8.appspot.com/o/portfolio%2Fshoes.png?alt=media&token=8c70753c-673f-4c84-9731-6bce33e7fe45",
+    subtitle: "The site is built to demonstrate adaptive design skills.",
+    description: [
+      "The site is built using pure JavaScript and Tailwind CSS without any UI libraries..",
+      "Adaptation for devices: mobile, tablet, small laptop, large laptop, and higher..",
+    ],
+    tech: "JavaScript, Tailwind CSS,",
+    demoLink: "https://shoesshop-wvf3.onrender.com/",
+    gitLink: "https://github.com/heorhii-tech/shoesShop",
+  },
   {
     project: "Chuck Norris jokes",
     year: 2022,
